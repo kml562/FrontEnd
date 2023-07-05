@@ -1,10 +1,9 @@
 import { useState } from "react";
 import "./App.css";
-
 function App() {
   const [count1, setCount1] = useState(0);
   const [count2, setCount2] = useState(0);
-  const [result, setres] = useState(0);
+  const [result, setres] =  useState(0);
   
   const add = () => {
     console.log(count1,count2);
@@ -21,7 +20,7 @@ function App() {
   };
 
   const divide = () => {
-    const results =  parseFloat(count1) % parseFloat(count2) ; ;
+    const results =  parseFloat(count1) / parseFloat(count2) ; ;
     setres(results);
   }
 
